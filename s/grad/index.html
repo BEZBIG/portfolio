@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ru" data-rsvp-endpoint="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Михаил Соколов — приглашение</title>
+  <link rel="icon" href="../../static/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#b3121b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;600&family=Montserrat:wght@400;600;800;900&family=Marck+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../static/css/base.css">
+  <link rel="stylesheet" href="../../static/css/sites/grad.css">
+  <style>:root { --accent: #b3121b; }</style>
+</head>
+<body class="site-grad" >
+  
+<!-- HERO -->
+<section class="hero">
+  <p class="school">Лицей №1 · выпуск</p>
+  <p class="graduate">ВЫПУСКНИК</p>
+  <div class="bulbs-wrap">
+    <svg class="cap" viewBox="0 0 120 80" aria-hidden="true">
+      <path d="M60 6 116 28 60 50 4 28z" fill="#8f0f16"/><path d="M60 6 116 28 60 50 4 28z" fill="url(#capShine)"/>
+      <path d="M28 38v18c0 8 64 8 64 0V38L60 50z" fill="#6d0a10"/>
+      <path d="M60 28 96 34v24" stroke="#f5c542" stroke-width="2.5" fill="none" class="tassel"/>
+      <circle cx="96" cy="60" r="4" fill="#f5c542" class="tassel"/>
+      <defs><linearGradient id="capShine" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".25"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+    </svg>
+    <div class="bulbs" data-bulbs="2027" role="img" aria-label="2027"></div>
+  </div>
+  <p class="neon name">Михаил Соколов</p>
+
+  <p class="caps">приглашаю отпраздновать вместе</p>
+  <p class="bigdate">22.06.2027</p>
+  <p class="caps dim">начало в 19:00</p>
+</section>
+
+<section class="photo">
+  <figure>
+    <video class="" src="../../static/video/grad.mp4" poster="../../static/video/grad.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Видео: выпускница у университета"></video>
+    <figcaption class="neon sm">мы смогли!</figcaption>
+  </figure>
+  <p class="addr">Loft Hall<br>ул. Садовая, 123, Москва</p>
+  <a class="pill" href="https://yandex.ru/maps/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%20%D1%83%D0%BB.%20%D0%A1%D0%B0%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F%2C%20123" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" width="16" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg>
+    Маршрут
+  </a>
+</section>
+
+<!-- ТАЙМЕР -->
+<section class="count">
+  <p class="caps dim">до вечеринки</p>
+  <div class="timer" data-countdown="2027-06-22T19:00:00+03:00">
+    
+    <div class="tile"><b data-unit="d">00</b><small>дн</small></div>
+    
+    <div class="tile"><b data-unit="h">00</b><small>ч</small></div>
+    
+    <div class="tile"><b data-unit="m">00</b><small>мин</small></div>
+    
+    <div class="tile"><b data-unit="s">00</b><small>сек</small></div>
+    
+  </div>
+</section>
+
+<!-- RSVP -->
+<section class="rsvp">
+  <h2 class="h2">RSVP</h2>
+  <p class="script">до 22.06</p>
+  <p class="dim">Заполни форму и дай знать, что придёшь!</p>
+  <form data-rsvp="grad" class="cards">
+    <div class="rsvp-fields">
+      <div class="card head"><b>RSVP</b><span>* обязательные вопросы</span></div>
+      <label class="card"><span>Твоё имя *</span><input name="name" placeholder="Ответ" autocomplete="name"></label>
+      <fieldset class="card"><legend>Ты придёшь? *</legend>
+        <label class="r"><input type="radio" name="attend" value="yes"><i></i>Да, буду!</label>
+        <label class="r"><input type="radio" name="attend" value="no"><i></i>Увы, не смогу</label>
+      </fieldset>
+      <label class="card"><span>Сколько вас будет (включая тебя)?</span><input name="guests" type="number" min="1" max="10" placeholder="Ответ"></label>
+      <label class="card"><span>Какая песня выведет тебя на танцпол?</span><input name="song" placeholder="Ответ"></label>
+      <label class="card"><span>Пожелание выпускнику</span><textarea name="comment" rows="2" placeholder="Ответ"></textarea></label>
+      <button class="pill big" type="submit">Отправить</button>
+    </div>
+    <div class="card done" data-rsvp-done hidden>
+      <p class="neon sm">ура!</p>
+      <p>Ты в списке!<span data-coming-line> Уже подтвердили: <b data-coming>0</b></span></p>
+    </div>
+  </form>
+</section>
+
+<!-- ПОДАРОК + ФИНАЛ -->
+<section class="gift">
+  <p class="dim">Подарки необязательны, но если хочешь — вклад в учёбу в колледже будет очень кстати!</p>
+  <button class="pill" type="button" id="giftBtn">Подарить выпускнику</button>
+  <div class="gift-card" id="giftCard" hidden>
+    <p>Вишлист и реквизиты — у родителей выпускника.<br>Или просто приходи с хорошим настроением 🎓</p>
+  </div>
+</section>
+
+<section class="final">
+  <img src="../../static/img/grad/caps.jpg" alt="">
+  <div class="final-in">
+    <p class="neon xl">Он сделал это!</p>
+    <h2 class="h2">СПАСИБО</h2>
+    <p>что разделяете со мной этот момент. Ваша поддержка значит для меня целый мир!</p>
+    <button class="pill big" type="button" id="toss">🎓 Подбросить шапки</button>
+  </div>
+</section>
+
+  <a class="back-hub" href="../../">Все приглашения</a>
+  <script src="../../static/js/core.js"></script>
+  
+<script>
+  /* цифры из лампочек (матрица 5×7) */
+  const FONT = {
+    '0': ['01110','10001','10011','10101','11001','10001','01110'],
+    '1': ['00100','01100','00100','00100','00100','00100','01110'],
+    '2': ['01110','10001','00001','00110','01000','10000','11111'],
+    '3': ['11110','00001','00001','01110','00001','00001','11110'],
+    '4': ['00010','00110','01010','10010','11111','00010','00010'],
+    '5': ['11111','10000','11110','00001','00001','10001','01110'],
+    '6': ['00110','01000','10000','11110','10001','10001','01110'],
+    '7': ['11111','00001','00010','00100','01000','01000','01000'],
+    '8': ['01110','10001','10001','01110','10001','10001','01110'],
+    '9': ['01110','10001','10001','01111','00001','00010','01100'],
+  };
+  document.querySelectorAll('[data-bulbs]').forEach(el => {
+    let n = 0;
+    [...el.dataset.bulbs].forEach((ch, di) => {
+      const g = document.createElement('div');
+      g.className = 'digit';
+      (FONT[ch] || FONT['0']).forEach((row, y) => [...row].forEach((v, x) => {
+        const b = document.createElement('span');
+        if (v === '1') { b.className = 'b'; b.style.setProperty('--n', n++); b.style.setProperty('--x', x + di * 6); }
+        g.append(b);
+      }));
+      el.append(g);
+    });
+    el.style.setProperty('--total', n);
+    // по клику — «бегущие огни»
+    el.addEventListener('click', () => { el.classList.remove('chase'); void el.offsetWidth; el.classList.add('chase'); });
+    setTimeout(() => el.classList.add('on'), 300);
+  });
+
+  /* подарок */
+  const giftBtn = document.getElementById('giftBtn'), giftCard = document.getElementById('giftCard');
+  giftBtn.addEventListener('click', () => { giftCard.hidden = !giftCard.hidden; });
+
+  /* шапки в небо */
+  const toss = () => {
+    for (let i = 0; i < 14; i++) {
+      const c = document.createElement('span');
+      c.className = 'flying-cap'; c.textContent = '🎓';
+      c.style.left = (10 + Math.random() * 80) + 'vw';
+      c.style.setProperty('--r', (Math.random() * 720 - 360) + 'deg');
+      c.style.setProperty('--h', (60 + Math.random() * 30) + 'vh');
+      c.style.animationDelay = (Math.random() * .4) + 's';
+      document.body.append(c);
+      setTimeout(() => c.remove(), 2600);
+    }
+    confetti({ colors: ['#ffffff', '#f5c542', '#b3121b', '#ffdf8a'], count: 160 });
+  };
+  document.getElementById('toss').addEventListener('click', toss);
+  document.querySelector('form[data-rsvp]').addEventListener('rsvp:done', e => { if (e.detail.attend) toss(); });
+</script>
+
+</body>
+</html>

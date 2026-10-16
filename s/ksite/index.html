@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Любовь — это…</title>
+  <meta name="theme-color" content="#2a2727">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♥</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Marck+Script&family=PT+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="preload" as="image" href="static/img/hero.webp">
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true" style="background-image:url('static/img/hero.webp')"></div>
+
+  <!-- Обложка: тап открывает открытку и запускает музыку -->
+  <div class="gate" id="gate">
+    <img class="gate__hearts" src="static/img/hearts.webp" alt="">
+    <p class="gate__to">для тебя</p>
+    <button class="gate__btn" id="gateBtn" type="button">открыть</button>
+  </div>
+
+  <main class="card" id="card">
+
+    <!-- 1 — Начало -->
+    <section class="s-intro">
+      <h1 class="caps reveal">Любовь — это…</h1>
+      <div class="loveyou" aria-hidden="true">
+        <div class="loveyou__row" style="--row: 0; background-image:url('static/img/love-you.webp')"></div><div class="loveyou__row" style="--row: 1; background-image:url('static/img/love-you.webp')"></div><div class="loveyou__row" style="--row: 2; background-image:url('static/img/love-you.webp')"></div>
+      </div>
+      <figure class="s-intro__photo reveal">
+        <img src="static/img/hero.webp" alt="Мы">
+      </figure>
+      <p class="caps s-intro__sub reveal">…уметь быть рядом</p>
+      <div class="scroll-hint" aria-hidden="true">листай вниз</div>
+    </section>
+
+    <!-- 2 — Конверт -->
+    <section class="s-letter">
+      <p class="script s-letter__hint reveal">тебе письмо</p>
+      <div class="envelope reveal" id="envelope" role="button" tabindex="0" aria-label="Открыть письмо">
+        <img class="envelope__img" src="static/img/envelope.webp" alt="">
+        <span class="envelope__tap">нажми</span>
+      </div>
+      <article class="letter collapsed" id="letter">
+        <p class="script letter__greeting">Любимый,</p>
+        <p class="mono letter__p">Можно бесконечно говорить, что ты самый дорогой человек в моей жизни. О любви пишут и поют, но это лишь тени того, что живёт у меня внутри. Настоящая любовь — это быть рядом даже сквозь тысячи километров, чувствовать теплоту и излучать свет в грозу.</p><p class="mono letter__p">Пусть эта страничка будет нашим маленьким миром, который напоминает, как сильно я тебя ценю и как жду дня, когда снова смогу обнять.</p>
+        <img class="letter__hearts" src="static/img/hearts.webp" alt="">
+      </article>
+    </section>
+
+    <!-- 3 — Локации -->
+    <section class="s-places" id="places">
+      <h2 class="script title reveal">Наши места</h2>
+      <svg class="places__line" id="placesLine" aria-hidden="true"><path id="placesPath" d=""/></svg>
+      
+      <figure class="place place--left reveal">
+        <img class="place__img" src="static/img/loc-1.webp" alt="" loading="lazy">
+        <figcaption class="script place__cap">Вот тут мы впервые увидели друг друга</figcaption>
+      </figure>
+      
+      <figure class="place place--right reveal">
+        <img class="place__img" src="static/img/loc-2.webp" alt="" loading="lazy">
+        <figcaption class="script place__cap">Здесь ты мне подарил первый букет</figcaption>
+      </figure>
+      
+      <figure class="place place--left reveal">
+        <img class="place__img" src="static/img/loc-3.webp" alt="" loading="lazy">
+        <figcaption class="script place__cap">Здесь мы впервые открылись друг другу</figcaption>
+      </figure>
+      
+      <figure class="place place--right reveal">
+        <img class="place__img" src="static/img/loc-4.webp" alt="" loading="lazy">
+        <figcaption class="script place__cap">В этом месте мы прятались от тренерского штаба во время плей-офф</figcaption>
+      </figure>
+      
+    </section>
+
+    <!-- 4 — Благодарности -->
+    <section class="s-thanks">
+      <h2 class="script title reveal">Благодаря тебе</h2>
+      <ol class="blobs">
+        
+        <li class="blob blob--1 reveal">
+          <span class="blob__n script">1</span>
+          <span class="mono">у меня появился отдельный плейлист, не прошло и дня, чтобы не играли «Wicked Games» или «Right Here Waiting»</span>
+        </li>
+        
+        <li class="blob blob--2 reveal">
+          <span class="blob__n script">2</span>
+          <span class="mono">научилась покупать в ночи билет на утренний поезд</span>
+        </li>
+        
+        <li class="blob blob--3 reveal">
+          <span class="blob__n script">3</span>
+          <span class="mono">стала ценить каждую секунду совместного времени</span>
+        </li>
+        
+        <li class="blob blob--4 reveal">
+          <span class="blob__n script">4</span>
+          <span class="mono">научилась искать пути, когда в поезде или на арене аншлаг</span>
+        </li>
+        
+      </ol>
+      <div class="clips">
+        
+        <figure class="clip clip--1 reveal">
+          <video src="static/video/thanks-1.mp4" poster="static/video/thanks-1.jpg" muted loop playsinline preload="none"></video>
+        </figure>
+        
+        <figure class="clip clip--2 reveal">
+          <video src="static/video/thanks-2.mp4" poster="static/video/thanks-2.jpg" muted loop playsinline preload="none"></video>
+        </figure>
+        
+        <figure class="clip clip--3 reveal">
+          <video src="static/video/thanks-3.mp4" poster="static/video/thanks-3.jpg" muted loop playsinline preload="none"></video>
+        </figure>
+        
+        <figure class="clip clip--4 reveal">
+          <video src="static/video/thanks-4.mp4" poster="static/video/thanks-4.jpg" muted loop playsinline preload="none"></video>
+        </figure>
+        
+      </div>
+      <p class="script outro reveal">и это лишь начало…</p>
+    </section>
+
+    <!-- 5 — Гол -->
+    <section class="s-goal">
+      <div class="score reveal">
+        <span class="score__label caps">номер</span>
+        <span class="score__num">83</span>
+        <svg class="score__circle" viewBox="0 0 200 200" aria-hidden="true">
+          <path d="M150 28 C 92 2, 22 40, 24 104 C 26 168, 108 196, 160 164 C 202 136, 196 54, 128 26 C 104 18, 78 22, 62 30"/>
+        </svg>
+      </div>
+      <p class="script goal__shout reveal">гооол!</p>
+      <p class="mono goal__text reveal">Каждый матч я ловлю тебя в трансляции, а один гол окутал пламенем моё сердечко, потому что ты его посвятил мне.</p>
+      <figure class="goal__video reveal">
+        <video src="static/video/goal.mp4" poster="static/video/goal.jpg" muted loop playsinline preload="none"></video>
+      </figure>
+      <svg class="wave" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M-10 40 C 60 10, 110 60, 180 34 S 300 0, 410 30"/>
+      </svg>
+    </section>
+
+    <!-- 6 — Финал -->
+    <section class="s-final">
+      <p class="mono final__p reveal">Знаешь, мы прошли большой путь, но он слишком мал по сравнению с тем, что нас ждёт.</p><p class="mono final__p reveal">Мы ещё не были в горах и не купались в море, не катались на сноуборде и не прыгали с парашютом.</p><p class="mono final__p reveal">Впереди много препятствий, но помни, что каждое мы проходим вместе, помогая друг другу.</p>
+      <figure class="final__photo reveal">
+        <img src="static/img/final.webp" alt="Мы" loading="lazy">
+        <img class="final__hearts" src="static/img/hearts.webp" alt="" loading="lazy">
+      </figure>
+      <p class="script final__love reveal">Я очень люблю тебя!</p>
+      <p class="caps final__closing reveal">А любовь стоит того, чтобы ждать.</p>
+      <div class="withlove reveal" aria-label="With love">
+        <span class="withlove__w">W</span><span class="withlove__ith">ITH</span>
+        <span class="withlove__love">Love</span>
+      </div>
+    </section>
+  </main>
+
+  
+
+  <script src="static/js/main.js"></script>
+</body>
+</html>
